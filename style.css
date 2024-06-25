@@ -1,0 +1,10 @@
+.centering{
+  text-align: center;
+  font-family: "Ludica Sans Unicode", sans-serif;
+}
+
+.container {
+  width: 670px;
+  margin: 0 auto;
+  overflow: auto;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>maebarai-hantei</title>
+</head>
+
+<body style="background-color: rgb(171, 233, 171);" class="container">
+  <h1 class="centering">&#x1F63A;前払費用判定&#128572;</h1>
+
+<br></br>
+
+<div>
+  <p class="centering"> 
+    <label for="accountingDate">計上日</label>
+    <input type="date" id="accountingDate" value="" min="2024-04-01" max="2999-12-31"> 
+
+    <label for="paymentDate">　支払予定日</label>
+    <input type="date" id="paymentDate" value="" min="2024-04-01" max="2999-12-31"> 
+    
+    <label for="typeOfDeriver">　納品形式</label>
+    <select id="typeOfDeriver">
+      <option value="">--選択してください--</option>
+      <option value="1">1.一括納品</option>
+      <option value="2">2.継続納品</option>
+    </select>
+  </p>
+</div>
+
+<br></br>
+
+<div>
+  <h4 class="centering">納品形式が「1.一括納品」の場合</h4>
+    
+  <p class="centering"> 
+    <label for="effectiveDate">効果発生日</label>
+    <input type="date" id="effectiveDate" value="" min="2024-04-01" max="2999-12-31"> 
+  </p>
+    
+</div>
+
+<br></br>
+
+<div>
+  <h4 class="centering">納品形式が「2.一括納品」の場合</h4>
+    
+  <p class="centering">
+    <label for="startDate">契約／役務提供開始日</label>
+    <input type="date" id="startDate" value="" min="2024-04-01" max="2999-12-31"> 
+
+    <label for="endDate">　契約／役務提供終了日</label>
+    <input type="date" id="endDate" value="" min="2024-04-01" max="2999-12-31"> 
+  </p>
+
+  <p class="centering">
+    <input type="checkbox" id="continuation"><label id="continuation">均等均質に役務提供がある かつ 毎年継続している</label>
+  </p>
+
+</div>
+
+<br></br>
+
+<div>
+  <p class="centering">
+    <input type="button" id="calculate" value="判定開始">
+    <input type="button" id="reload" value="クリア">
+  </p>
+</div>
+
+</body>
+
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css"> 
+
+</html>
